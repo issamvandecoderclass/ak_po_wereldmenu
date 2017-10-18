@@ -1,27 +1,3 @@
-/*!
- * jQuery Countdown plugin v1.0
- * http://www.littlewebthings.com/projects/countdown/
- *
- * Copyright 2010, Vassilis Dourdounis
- * 
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to deal
- * in the Software without restriction, including without limitation the rights
- * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- * copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
- * 
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- * 
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
- * THE SOFTWARE.
- */
 (function($){
 
 	$.fn.countDown = function (options) {
@@ -31,7 +7,7 @@
 		$.extend(config, options);
 
 		diffSecs = this.setCountDown(config);
-	
+
 		if (config.onComplete)
 		{
 			$.data($(this)[0], 'callback', config.onComplete);
@@ -101,7 +77,7 @@
 			days = Math.floor(diffSecs/60/60/24);
 			weeks = Math.floor(diffSecs/60/60/24/7);
 		}
-		else 
+		else
 		{
 			days = Math.floor(diffSecs/60/60/24)%7;
 			weeks = Math.floor(diffSecs/60/60/24/7);
@@ -119,8 +95,8 @@
 			e = $this;
 			t = setTimeout(function() { e.doCountDown(id, diffSecs-1) } , 1000);
 			$.data(e[0], 'timer', t);
-		} 
-		else if (cb = $.data($this[0], 'callback')) 
+		}
+		else if (cb = $.data($this[0], 'callback'))
 		{
 			$.data($this[0], 'callback')();
 		}
@@ -129,7 +105,7 @@
 
 	$.fn.dashChangeTo = function(id, dash, n, duration) {
 		  $this = $('#' + id);
-		 
+
 		  for (var i=($this.find('.' + dash + ' .digit').length-1); i>=0; i--)
 		  {
 				var d = n%10;
@@ -154,11 +130,9 @@
 				$(digit + ' div.bottom').css({'display': 'block', 'height': ''});
 				$(digit + ' div.top').hide().slideUp(10);
 
-			
+
 			});
 		}
 	};
 
 })(jQuery);
-
-

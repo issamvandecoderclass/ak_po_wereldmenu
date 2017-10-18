@@ -1,19 +1,7 @@
-/*
-    Theme Name: ComingSoon
-    Theme URL: https://bootstrapmade.com/comingsoon-free-html-bootstrap-template/
-    Author: BootstrapMade
-    Author URL: https://bootstrapmade.com
-*/
-/* ==== Google font ==== */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600);
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100);
-
 @import url('font-awesome.css');
-/* ==== overwrite bootstrap standard ==== */
 @import url('overwrite.css');
-
-
-
 body {
 	background:url('../images/background.jpg') 0 0 no-repeat;
 	overflow-x:hidden;
@@ -25,8 +13,8 @@ body {
 	font-size:40px;
 	margin-top:30px;
 	color:#fff;
-	text-align:center;	
-	font-family:Roboto;	
+	text-align:center;
+	font-family:Roboto;
 }
 
 .welcome {
@@ -35,7 +23,7 @@ body {
 
 p {
 	font-family:Roboto;
-	color:#fff;	
+	color:#fff;
 }
 
 
@@ -80,7 +68,7 @@ p {
 .dash_title {
 	position: absolute;
 	display: block;
-	bottom: 0px;	
+	bottom: 0px;
 	font-size:12px;
 	font-weight:500;
 	color: #fff;
@@ -91,12 +79,12 @@ p {
 }
 
 form.form-horizontal {
-	margin-top:60px;	
+	margin-top:60px;
 }
 
 #subscribe_form {
 	position: relative;
-} 
+}
 
 #email_field {
 	border-left: 0px solid #fff;
@@ -139,11 +127,11 @@ ul.social-network {
 
 ul.social-network li {
 	display:inline;
-	margin: 0 18px;	
+	margin: 0 18px;
 }
 
-ul.social-network li a {	
-	color:#d0d0d0;	
+ul.social-network li a {
+	color:#d0d0d0;
 }
 .social-network li:hover .fa-twitter {
   color: #00abf0;
@@ -156,19 +144,19 @@ ul.social-network li a {
 }
 .social-network li:hover .fa-pinterest {
   color: #c9171e;
-  
+
 }
 .social-network li:hover .fa-linkedin {
-  color: #0077b5; 
+  color: #0077b5;
 }
 .social-network li:hover .fa-youtube-play {
-  color: #C84941; 
+  color: #C84941;
 }
 .social-network li:hover .fa-dribbble {
-  color: #EA4C89 ; 
+  color: #EA4C89 ;
 }
 .social-network li:hover .fa-pinterest-square {
-  color: #EA4B49; 
+  color: #EA4B49;
 }
 
 #loading {
